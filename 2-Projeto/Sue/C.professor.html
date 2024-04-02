@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Professor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        fieldset {
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"]
+         {
+            padding: 10px 20px;
+            background-color: #097eec;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #097eec;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>CADASTRO DO PROFESSOR</legend>
+    
+	<h3>Dados Pessoais:</h3>
+
+	<p>Nome do(a) Professor(a):
+		<input type="text" required name="name" size="20" maxlength="40" id="fname" placeholder="Nome do Professor"><br>
+	</p>	
+    <p>	Data de Nascimento:
+       <input type="date" name="data"  size="20" maxlength="40" id="data"/><br>
+    </p>
+	<p>CPF:
+		<input type="number" required name="cpf" size="11" maxlength="40" id="cpf" placeholder="Digite CPF"><br>
+	</p>
+	<p>RG:
+		<input type="number" required name="rg" size="8" maxlength="40" id="rg"placeholder="Digite RG" ><br>
+	</p>
+	<p>Telefone: DDD (
+		<input type="tel" required name="ddd" size="1" maxlength="2" id="ddd"placeholder="DDD">)
+		Tel:<input type="tel" required name="telefone" size="5" maxlength="8" id="tel" placeholder="telefone">
+	
+	</p>
+	<p>E-mail:
+		<input type="email" required name="email" size="20" maxlength="40" id="email" placeholder="Email@exemple.com" ><br>
+	</p>
+</fieldset>
+<fieldset>
+    <legend>Dados de Atuação</legend>
+
+	<div class="principal">
+		<div class="series">
+		<p> Série de Atuação: <br />
+			<select name="serie">
+				  <option value="valor1">Nível de atuação</option>
+				  <option value="valor2">1 Ano Médio</option>
+				  <option value="valor3">2 Ano Médio</option>
+                  <option value="valor3">3 Ano Médio</option>
+				  
+			</select>
+		</p>
+		</div>
+		<div class="turno">
+		<p> Turnos:<br />
+			<input type="radio" name="turno" value="manhã">Manhã<br>
+			<input type="radio" name="turno" value="tarde">Tarde<br>
+		</p>
+		</div>
+		
+		<div class="atividade">
+			<p>Matérias :<br />
+				<input type="checkbox" name="por">Português<br>
+				<input type="checkbox" name="mat" >Matemática<br>
+				<input type="checkbox" name="his" >História<br>
+				<input type="checkbox" name="geo" >Geografia<br>
+				<input type="checkbox" name="qui" >Quimica<br>
+				<input type="checkbox" name="fis" >Física<br>
+                <input type="checkbox" name="Bio" >Biologia<br>
+			</p>
+		</div>
+	</div>
+
+	</div>
+</fieldset>
+<input type="submit" value="Cadastrar">
+ <input type="submit" value="Excluir">

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Disciplinas</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        fieldset {
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 10px auto;
+            padding: 15px;
+            width: 50%;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            
+            display: inline-block;
+            padding: 10px 30px;
+            margin-right: 10px;
+            background-color: #097eec;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #055aa3;
+        }
+    </style>
+</head>
+<body> 
+    
+    <fieldset>
+        <legend>Cadastro de Disciplinas</legend>
+        <label for="nome">Nome da Disciplina:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        
+        <label for="codigo">Código da Disciplina:</label><br>
+        <input type="text" id="codigo" name="codigo"><br>
+        
+        <label for="professor">Professor Responsável:</label><br>
+        <input type="text" id="professor" name="professor"><br>
+
+        <label for="carga">Carga Horária:</label><br>
+        <input type="number" id="carga" name="carga"><br>
+        
+        <label for="horario">Horário da Disciplina:</label><br>
+        <input type="text" id="horario" name="horario"><br>
+
+        <label for="descricao">Descrição da Disciplina:</label><br>
+        <textarea id="descricao" name="descricao" rows="3" cols="50"></textarea><br>
+
+        <label for="dia">Dia(s) da Semana:</label><br>
+        <select id="dia" name="dia">
+            <option value="segunda-feira">Segunda-feira</option>
+            <option value="terca-feira">Terça-feira</option>
+            <option value="quarta-feira">Quarta-feira</option>
+            <option value="quinta-feira">Quinta-feira</option>
+            <option value="sexta-feira">Sexta-feira</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+        </select><br><br>
+        
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Excluir">
+    </fieldset>
+    </form>
+</body>
+</html>
+
